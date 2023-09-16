@@ -6,7 +6,10 @@ function validString() {
         result.style.color="red";
         return;
     }
-    if(BracesValid(inputString)) {
+    const inputWithoutSpaces = inputString.replace(/\s/g, "");
+
+    if (BracesValid(inputWithoutSpaces)) {
+
         result.textContent="Valid";
         result.style.color="turquoise";
     
@@ -17,8 +20,8 @@ function validString() {
     }
 }
 function BracesValid(input) {
-    const regex=/\(\)|\{\}|\[\]/g;
-    let lastInput=input;
-    while(lastInput!=(lastInput=lastInput.replace(regex,''))){ }
-    return lastInput.length===0;
+    const regex = /\(\)|\{\}|\[\]/g;
+    let lastInput = input;
+    while (lastInput !== (lastInput = lastInput.replace(regex, ''))) { }
+    return lastInput.length === 0;
 }
