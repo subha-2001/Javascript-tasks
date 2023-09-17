@@ -19,10 +19,10 @@ function validString() {
     const inputWithoutSpaces = inputString.replace(/\s/g, "");
 
     if (BracesValid(inputWithoutSpaces)) {
-        result.textContent = "Valid String";
+        result.textContent = "The String is properly nested. It's a valid String";
         result.style.color = "turquoise";
     } else {
-        result.textContent = "Invalid String";
+        result.textContent = "The String is improperly nested. It's an invalid String";
         result.style.color = "red";
     }
 }
