@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API TASK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <form id="zipcodeform">
+            <h1>ZIPCODE FINDER</h1>
+            <label>Provide a US zipcode</label>
+            <input type="text" class="zipcode" id="zipcode" placeholder="Enter 5 digit US zipcode here">
+            <button type="reset" id="resetbtn">Reset</button>
+            <button type="button" onclick="validZipcode()" id="submitbtn">Submit</button>
+        </form>
+        <div id="result">
+            <p> <span id="country"></span></p>
+            <p> <span id="state"></span></p>
+            <p><span id="city"></span></p>
+            <div id="map">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

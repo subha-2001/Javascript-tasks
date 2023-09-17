@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    height: 100vh;
+    background-color:cadetblue;
+}
+.card {
+    width:500px;
+    height:370px;
+    background-color: rgb(6, 6, 79);
+    box-shadow: 0px 0px 10px rgba(0,0,0,2);
+    border-radius: 10%;
+    position: relative;
+}
+
+.zipcode {
+    display: block;
+    width:80%;
+    padding:18px 15px;
+    margin:10px 25px 10px;
+}
+#resetbtn,#submitbtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin:5px;
+    
+}
+#zipcodeform {
+    text-align: center;
+}
+#resetbtn {
+    background-color: tomato;
+    color: white;
+    border: none;
+}
+#submitbtn {
+    background-color: blue;
+    border: none;
+    color:white;
+}
+#result {
+    text-align: justify;
+    margin:10px 160px 10px ;
+    color:rgb(190, 203, 230);
+    font-weight: bold;
+    
+}
