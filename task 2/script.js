@@ -1,5 +1,12 @@
+// Add a boolean flag to track whether an API call is in progress
+let isAPICallInProgress = false;
+
 //Validates and retrieves location information for a US zipcode.
 function validZipcode() {
+    if (isAPICallInProgress) {
+        return; // If an API call is already in progress, do nothing
+    }
+
     const zipcode = document.getElementById("zipcode").value;
     const result = document.getElementById("result");
     if (!zipcode.trim()) {
@@ -10,6 +17,9 @@ function validZipcode() {
     if (/^\d{5}$/.test(zipcode)) {
         // Clear any previous result or error messages
         result.innerHTML = "";
+         // Set the flag to indicate that an API call is in progress
+        isAPICallInProgress = true;
+
         fetch(`https://ziptasticapi.com/${zipcode}`)
             .then(response => response.json())
             .then(data => {
@@ -33,6 +43,10 @@ function validZipcode() {
                 result.textContent = "An error occurred while fetching data.";
                 result.style.color = "red";
                 console.error(error);
+            })
+            .finally(() => {
+                // Reset the flag to indicate that the API call has completed
+                isAPICallInProgress = false;
             });
     } else {
         result.textContent = "The given zipcode is invalid. Please provide a valid 5-digit US zipcode.";
@@ -42,6 +56,7 @@ function validZipcode() {
 // Clears the result content and enables the submit button.
 document.querySelector('#resetbtn').addEventListener('click', function () {
     document.getElementById("result").innerHTML = "";
+    document.getElementById("zipcode").value = "";
     document.getElementById("submitbtn").disabled = false;
 });
 // Attach the validZipcode function to the submit button click event.
