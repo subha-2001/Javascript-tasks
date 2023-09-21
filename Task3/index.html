@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Delivery Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Package Delivery Calculator</h1>
+    </header>
+    <div class="container">
+        <label for="start">Start Location:</label>
+        <select id="start">
+            <option value="">Select a place for the start location</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Trichy">Trichy</option>
+            <option value="Salem">Salem</option>
+        </select><br><br>
+
+        <label for="end">End Location:</label>
+        <select id="end">
+            <option value="">Select a place for the end location</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Trichy">Trichy</option>
+            <option value="Salem">Salem</option>
+        </select>
+
+        <button onclick="calculateDeliveryDate()">Calculate</button>
+
+        <ul class="timeline" id="result">
+        </ul>
+
+        <!-- Delivered Message -->
+        <div class="delivered-message" id="deliveredMessage">
+            Package will be Delivered on <span id="deliveryDate"></span> &#10004;
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
