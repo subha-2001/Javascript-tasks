@@ -58,11 +58,9 @@ function calculateDeliveryDate() {
         showError('Route not found');
         return;
     }
-
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
-
-    // Calculate the end date based on delivery days
+ // Calculate the end date based on delivery days
     const endDate = new Date(currentDate);
 
     for (let day = 1; day <= result.days; day++) {
@@ -73,16 +71,12 @@ function calculateDeliveryDate() {
             endDate.setDate(endDate.getDate() + 1);
         }
     }
-
-    const deliveryDetails = `${result.route}\nNumber of days: ${result.days}\nStart Date: ${currentDate.toDateString()}\nEnd Date: ${endDate.toDateString()}`;
+    const deliveryDetails = `Route: ${result.route}<br>Number of days: ${result.days}<br>Start Date: ${currentDate.toDateString()}<br>End Date: ${endDate.toDateString()}`;
     document.getElementById('deliveryDate').textContent = endDate.toDateString();
     document.getElementById('deliveredMessage').style.display = 'block';
-    
-    document.getElementById('result').textContent = deliveryDetails;
-    // document.getElementById('deliveryDetails').style.color = 'blue';
-          
-}
+    document.getElementById('result').innerHTML = deliveryDetails;
 
+}
 function showError(message) {
     document.getElementById('result').textContent = message;
     document.getElementById('deliveredMessage').style.display = 'none';
