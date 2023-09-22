@@ -46,6 +46,7 @@ function calculateDeliveryDate() {
     }
     const visited = {};
     let result;
+    //Calculate shortest route and the estimated number of days 
 
     if (routeMap[startLocation] && routeMap[startLocation][endLocation]) {
         result = { days: routeMap[startLocation][endLocation], route: `${startLocation} -> ${endLocation}` };
@@ -78,11 +79,12 @@ function calculateDeliveryDate() {
     document.getElementById('deliveredMessage').style.display = 'block';
     
     document.getElementById('result').textContent = deliveryDetails;
-    document.getElementById('deliveryDetails').style.color = 'blue';
+    // document.getElementById('deliveryDetails').style.color = 'blue';
           
 }
 
 function showError(message) {
     document.getElementById('result').textContent = message;
+    document.getElementById('result').style.color='maroon';
     document.getElementById('deliveredMessage').style.display = 'none';
 }
