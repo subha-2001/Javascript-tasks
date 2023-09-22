@@ -85,6 +85,5 @@ function calculateDeliveryDate() {
 
 function showError(message) {
     document.getElementById('result').textContent = message;
-    document.getElementById('result').style.color='maroon';
     document.getElementById('deliveredMessage').style.display = 'none';
 }
