@@ -1,29 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image:linear-gradient(to right,rgb(161, 44, 139),white);
     margin: 0;
+    color:white;
     padding: 0;
 }
-
-/* Header Styles */
-header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+#start {
+    padding: 5px;
+    margin: 10px;
+    border:3px solid grey;
+    
 }
-
+#end {
+    padding:5px;
+    border:3px solid grey;
+    margin: 10px;
+}
+/* Header Styles */
 h1 {
-    margin: 0;
+ 
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    
 }
 
 /* Container Styles */
 .container {
-    /* max-width: 800px; */
+   
     margin: 20px auto;
-    width:500px;
-    height:30%;
-    background-color: #087966;
+    width: 500px;
+    height: 30%;
+    background-color:black;
     box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.1);
     border-radius: 20px;
     padding: 20px;
@@ -34,42 +42,37 @@ h1 {
 .timeline {
     list-style: none;
     padding: 0;
-    color: #540a5c;
+    color: rgb(208, 216, 224);
+    font-size: larger;
+    padding: 10px;
     font-weight: bold;
 }
 
-
-.timeline-item {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #b11a75;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 .timeline-info {
     margin-top: 10px;
 }
 
-.timeline-info h3, .timeline-info p {
+.timeline-info h3,
+.timeline-info p {
     margin: 0;
     font-size: 16px;
 }
+
 .button {
     display: block;
-    background-color: #930a71;
-   margin: auto;
-   padding: 10px;
-   color: #fff;
-   margin-top:10px;
-   border-radius: 12px;
+    background-color: #631a66;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Delivered Message Styles */
 .delivered-message {
-    background-color: #0c3054;
+    background-color: #54c5cd;
     color: #fff;
     text-align: center;
     padding: 10px;
