@@ -6,25 +6,14 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     overflow: hidden;
+    background-image: linear-gradient(to right,black,white);
 }
-.arc {
-    position: fixed;
-    top: -90px;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background-color: #333; 
-    border-radius: 50%;
-    transform: scaleX(2);
-    z-index: -1;
-   
-}
+
 .card {
     width:500px;
-    height:370px;
     background-color: rgb(6, 6, 79);
     box-shadow: 0px 0px 10px rgba(0,0,0,2);
-    border-radius: 10%;
+    border-radius: 12px;
     position: relative;
 }
 
@@ -32,7 +21,8 @@ body {
     display: block;
     width:80%;
     padding:18px 15px;
-    margin:10px 25px 10px;
+    margin:10px 25px 0px;
+
 }
 #resetbtn,#submitbtn {
     padding: 10px 20px;
@@ -58,5 +48,6 @@ body {
     margin:10px 160px 10px ;
     color:rgb(190, 203, 230);
     font-weight: bold;
+    padding-bottom: 40px;
     
 }
