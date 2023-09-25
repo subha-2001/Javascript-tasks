@@ -67,7 +67,7 @@ function calculateDeliveryDate() {
         endDate.setDate(endDate.getDate() + 1);
 
         // Skip both Sundays (0) and Saturdays (6)
-        while (endDate.getDay() === 0 || endDate.getDay() === 6) {
+        if(endDate.getDay() === 0 || endDate.getDay() === 6) {
             endDate.setDate(endDate.getDate() + 1);
         }
     }
