@@ -30,6 +30,6 @@ function validString() {
 function BracesValid(input) {
     const regex = /\(\)|\{\}|\[\]/g;
     let lastInput = input;
-    while (lastInput !== (lastInput = lastInput.replace(regex, ''))) { }
+    if (lastInput !== (lastInput = lastInput.replace(regex, ''))) { }
     return lastInput.length === 0;
 }
