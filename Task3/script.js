@@ -10,7 +10,7 @@ function calculateDeliveryDate() {
     }
 
     if (startLocation === endLocation) {
-        showError('Route not found');
+        showError('Start location and end location cannot be same');
         return;
     }
 
