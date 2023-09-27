@@ -1,8 +1,6 @@
 function calculateDeliveryDate() {
     const startLocation = document.getElementById('start').value;
     const endLocation = document.getElementById('end').value;
-    const timeline = document.querySelector('.timeline');
-    timeline.innerHTML = '';
 
     if (!startLocation || !endLocation) {
         showError('Please select both start and end locations properly');
@@ -10,7 +8,7 @@ function calculateDeliveryDate() {
     }
 
     if (startLocation === endLocation) {
-        showError('Start location and end location cannot be same');
+        showError('Start location and end location cannot be the same');
         return;
     }
 
@@ -44,9 +42,9 @@ function calculateDeliveryDate() {
         visited[start] = false;
         return { days: shortestDays, route: shortestRoute };
     }
+
     const visited = {};
     let result;
-    //Calculate shortest route and the estimated number of days 
 
     if (routeMap[startLocation] && routeMap[startLocation][endLocation]) {
         result = { days: routeMap[startLocation][endLocation], route: `${startLocation} -> ${endLocation}` };
@@ -58,25 +56,28 @@ function calculateDeliveryDate() {
         showError('Route not found');
         return;
     }
+
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
- // Calculate the end date based on delivery days
+
+    // Calculate the end date based on delivery days while skipping weekends
     const endDate = new Date(currentDate);
 
     for (let day = 1; day <= result.days; day++) {
         endDate.setDate(endDate.getDate() + 1);
 
         // Skip both Sundays (0) and Saturdays (6)
-        if(endDate.getDay() === 0 || endDate.getDay() === 6) {
+        while (endDate.getDay() === 0 || endDate.getDay() === 6) {
             endDate.setDate(endDate.getDate() + 1);
         }
     }
+
     const deliveryDetails = `Route: ${result.route}<br>Number of days: ${result.days}<br>Start Date: ${currentDate.toDateString()}<br>End Date: ${endDate.toDateString()}`;
     document.getElementById('deliveryDate').textContent = endDate.toDateString();
     document.getElementById('deliveredMessage').style.display = 'block';
     document.getElementById('result').innerHTML = deliveryDetails;
-
 }
+
 function showError(message) {
     document.getElementById('result').textContent = message;
     document.getElementById('deliveredMessage').style.display = 'none';
