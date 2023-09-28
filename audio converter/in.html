@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <textarea id="textToSpeak" rows="4" cols="50">Enter text here...</textarea>
+        <button id="speakSlowButton">Speak Slowly</button>
+        <button id="speakFastButton">Speak Quickly</button>
+    </div>
+    <script>
+        // Check if the browser supports the SpeechSynthesis API
+        if ('speechSynthesis' in window) {
+            const textToSpeakInput = document.getElementById('textToSpeak');
+            const speakSlowButton = document.getElementById('speakSlowButton');
+            const speakFastButton = document.getElementById('speakFastButton');
+
+            // Function to start speaking slowly
+            function speakSlowly() {
+                const textToSpeak = textToSpeakInput.value;
+                const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                utterance.rate = 0.5; // Adjust the rate for slower speech
+                speechSynthesis.speak(utterance);
+            }
+
+            // Function to start speaking quickly
+            function speakQuickly() {
+                const textToSpeak = textToSpeakInput.value;
+                const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                utterance.rate = 2.0; // Adjust the rate for faster speech
+                speechSynthesis.speak(utterance);
+            }
+
+            // Add click event listeners to the buttons
+            speakSlowButton.addEventListener('click', speakSlowly);
+            speakFastButton.addEventListener('click', speakQuickly);
+        } else {
+            alert('Your browser does not support the SpeechSynthesis API. Please use a modern browser.');
+        }
+    </script>
+</body>
+
+</html>

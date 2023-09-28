@@ -1,0 +1,61 @@
+/* Center the entire page content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right,pink,grey);
+    margin: 0;
+}
+
+.container {
+    background-color: #1ec4bc;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%; /* Adjust the container width for responsiveness */
+    max-width: 600px; /* Set a maximum width for larger screens */
+}
+
+/* Style the h1 element */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the textarea */
+#textToSpeak {
+    width: 80%; /* Make the textarea expand to the container width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Style the Speak buttons */
+#speakSlowButton,
+#speakFastButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+#speakSlowButton:hover,
+#speakFastButton:hover {
+    background-color: #751160;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Adjust the container width for smaller screens */
+        padding: 15px; /* Increase padding for readability */
+    }
+}
