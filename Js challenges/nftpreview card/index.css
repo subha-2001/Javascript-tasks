@@ -111,7 +111,7 @@ body {
 }
 
 hr {
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     border: none;
     border-top: 1px solid hsl(215, 32%, 27%);
