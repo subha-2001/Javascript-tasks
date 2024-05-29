@@ -49,14 +49,21 @@ h2 {
     width: 60%;
     cursor: pointer;
     border: 2px solid hsl(0, 0%, 95%);
-    color:hsla(0, 0%, 100%, 0.75);
     border-radius: 20px;
-    background-color:  hsl(31, 77%, 52%);;
+}
+.ybtn {
+    color:  hsl(31, 77%, 52%);;
+
 }
 .pbtn {
-    background-color: hsl(184, 100%, 22%);
-}
+    color: hsl(184, 100%, 22%);
+  
+    background-color: hsl(0, 0%, 95%);
+
+   }
 .p2 {
+    background-color: hsl(0, 0%, 95%);
+
     background-color: hsl(184, 100%, 22%);
     padding: 10px;
 }
@@ -66,22 +73,23 @@ h2 {
     border-radius: 0px 7px 7px 0px;
 }
 .gbtn {
-    background-color: hsl(179, 100%, 13%);
-
-}
-.ybtn:hover {
-    color: hsl(31, 77%, 52%);
-    background-color: hsl(0, 0%, 95%);
-}
-.pbtn:hover {
-    color: hsl(184, 100%, 22%);
-    background-color: hsl(0, 0%, 95%);
-
-}
-.gbtn:hover {
     background-color: hsl(0, 0%, 95%);
     color: hsl(179, 100%, 13%);
 
+}
+.ybtn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.pbtn:hover {
+    color: hsl(0, 0%, 95%);
+      background-color: hsl(184, 100%, 22%);
+   }
+.gbtn:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+
+   
 
 }
 @media screen  and (max-width:800px){
