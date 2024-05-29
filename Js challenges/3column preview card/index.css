@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    display: flex; 
+    justify-content: center;
+    font-family: 'Lexend Deca',serif;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 690px;
+   
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+}
+.y1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0px 0px 7px;
+    padding: 10px;
+}
+.yimg {
+    width: 35px;
+    margin: 15px 0px 0px 15px;
+}
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca',sans-serif;
+    margin: 15px 0px 0px 15px;
+}
+.para {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 14.8px;
+    margin: 15px 20px 5px 15px;
+    line-height: 1.5em;
+}
+.ybtn,.gbtn,.pbtn {
+    margin: 70px 30px 30px 15px;
+    padding: 15px;
+    font-weight: bold;
+    width: 60%;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    color:hsla(0, 0%, 100%, 0.75);
+    border-radius: 20px;
+    background-color:  hsl(31, 77%, 52%);;
+}
+.pbtn {
+    background-color: hsl(184, 100%, 22%);
+}
+.p2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 10px;
+}
+.g3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 10px;
+    border-radius: 0px 7px 7px 0px;
+}
+.gbtn {
+    background-color: hsl(179, 100%, 13%);
+
+}
+.ybtn:hover {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+}
+.pbtn:hover {
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+
+}
+.gbtn:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+
+
+}
+@media screen  and (max-width:800px){
+    body {
+        width: 100%;
+    
+    }
+    .container {
+        flex-direction: column;
+        max-width: 260px;
+        height: auto;
+        margin: 50px;
+    }
+    .y1 {
+        border-radius: 7px 7px 0px 0px;
+    }
+    .g3{
+       border-radius: 0px 0px 7px 7px;
+    }
+}
