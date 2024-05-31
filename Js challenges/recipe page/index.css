@@ -12,10 +12,10 @@ body {
     width:100%;
     margin-top: 30px;
     color:hsl(30, 10%, 34%);
-    /* height: 1165px; */
-    max-width: 400px;
+    height: 1570px;
+    max-width: 620px;
     border-radius: 20px;
-    margin-bottom: 60em;
+    margin-bottom: 30px;
     padding:20px;
     background-color: hsl(330, 100%, 98%);
 }
