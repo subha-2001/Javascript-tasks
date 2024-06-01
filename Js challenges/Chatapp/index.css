@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    width: 100%;
+    display: flex;
+    background-color: #fafafa;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 1000px;
+    margin: 0;
+}
+
+.leftbg {
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 30rem;
+    top: 0;
+    position: fixed;
+    left: -6rem;
+    height: 100vh;
+    z-index: -10;
+    min-height: 800px;
+    border-radius: 0 0 15rem 15rem;
+}
+
+.blank {
+    height: 2.5rem;
+    background: white;
+    width: min(50%, 17.5rem);
+    margin: 0 auto;
+    border-radius: 1.25rem;
+    position: absolute;
+    top: -1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top {
+    height: 4rem;
+    max-width: 340px;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    color: hwb(0 100% 0%);
+    vertical-align: middle;
+    border-radius: 2rem 2rem 10px 10px;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.topname {
+    flex: 1; /* This allows the name to grow horizontally */
+}
+
+.topinfo {
+    text-align: left; /* Aligns "Available to Walk" to the left */
+}
+
+.avimg {
+    width: 10%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.mb {
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-radius: 30px;
+    max-width: 320px;
+    margin-top: 5rem;
+    background-color: hsl(270, 20%, 96%);
+    height: 660px;
+    margin-bottom: 5rem;
+}
+
+.chatapp {
+    width: 100%;
+    max-width: 310px;
+    height: 650px;
+    border-radius: 30px;
+    background-color: hsl(260, 8%, 92%);
+    justify-content: center;
+}
+
+.ch1, .ch3 {
+    font-size: small;
+    background-color: hsl(273, 31%, 94%);
+    padding: 7px;
+    border-radius: 20px 20px 20px 0;
+    color: hsl(276, 55%, 52%);
+}
+
+.leftchat {
+    margin-left: 20px;
+}
+
+.ch3 {
+    width: 100%;
+    max-width: 55%;
+    height: 40px;
+}
+
+.ch1 {
+    width: 100%;
+    max-width: 50%;
+    height: 30px;
+}
+
+.rightchat {
+    margin-left: 8rem;
+}
+
+.rimg {
+    width: 21%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.ch2 {
+    background-color: white;
+    width: 100%;
+    max-width: 80%;
+    height: 30px;
+    padding: 8px;
+    border-radius: 20px 20px 0 20px;
+    font-size: 0.7rem;
+}
+
+.ch2s {
+    border-radius: 20px 20px 0 20px;
+    background-color: white;
+    width: 100%;
+    margin-left: 40px;
+    max-width: 60%;
+    font-size: small;
+    height: 20px;
+    padding: 5px;
+}
+
+.re {
+    width: 100%;
+    padding: 15px;
+    color: #fafafa;
+    max-width: 70%;
+    border-radius: 20px 20px 20px 0;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.rupee {
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.text-input {
+    font-size: .8rem;
+    width:70% ;
+    padding: 5px;
+    background: white;
+    display: flex;
+    color: #c6cacd;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 999vw;
+    margin-left:15px;
+    margin-right: 6px;
+    padding-left: 1.6em;
+    margin-top: auto;
+  }
+.send-btn {
+    width: 2.5em;
+   margin-left: 5rem;
+    color: #3e2753;
+  }
+h1 {
+    color: black;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    color: hsl(270, 7%, 64%);
+    max-width: 30%;
+    font-size: large;
+    line-height: 1.6em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .main {
+        max-width: 240px;
+    }
+    .mb {
+        margin-left: 10em;
+        width: 100%;
+        min-height: 400px;
+    }
+    .chatapp {
+        width: 100%;
+        min-height: 660px;
+    }
+    .text-input {
+        width: 80%;
+        margin-left: 10px;
+        margin-right: 6px;
+    }
+    .info {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
