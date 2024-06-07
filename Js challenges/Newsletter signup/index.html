@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="info">
+                <h2 class="head">Stay updated!</h2>
+                <p class="intro">
+                    Join 60,000+ product managers receiving monthly updates on: 
+                </p>
+                <ul>
+                    <li class="list">
+                        <img src="assets/images/icon-list.svg" class="tick">
+                        Product discovery and building what matters
+                    </li>
+                    <li class="list">
+                        <img src="assets/images/icon-list.svg" class="tick">
+                        Measuring to ensure updates are a success
+                    </li>
+                    <li class="list">
+                        <img src="assets/images/icon-list.svg" class="tick">
+                        And much more! 
+                    </li>
+                </ul>
+                <p class="topic">Email address</p>
+                <p id="result"></p>
+                <input type="email" id="emailbox" placeholder="email@company.com" required>
+                <button onclick="mailValidate()" id="subscribe">Subscribe to monthly newsletter</button>
+            </div>
+            <div class="image-container">
+                <img class="bg" src="assets/images/illustration-sign-up-desktop.svg" alt="Illustration">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
