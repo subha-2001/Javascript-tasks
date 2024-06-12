@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro-section-with-dropdown page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="img">
+                <img class="bg" src="images/image-hero-desktop.png" alt="Hero Image">
+            </div>
+            <img class="logo" src="images/logo.svg" alt="logo">
+
+            <div class="mobile-menu-icon" style="display: none;">
+                <img style="display: none;" onclick="toggleMenu()">
+            </div>
+
+            <div class="head">
+                <div class="feature">
+                    <h4 class="h1">Features
+                        <button onclick="toggleCompanyDropdown(this)" class="btn">
+                            <img class="drop-img" src="images/icon-arrow-down.svg" alt="dropdown arrow">
+                        </button>
+                    </h4>
+                    <div class="content" style="display: none;">
+                        <ul class="item1">
+                            <li>
+                                <img class="item-img" src="images/icon-todo.svg" alt="Todo List">
+                                <p class="lis">Todo List</p>
+                            </li>
+                            <li>
+                                <img class="item-img" src="images/icon-calendar.svg" alt="Calendar">
+                                <p class="lis">Calendar</p>
+                            </li>
+                            <li>
+                                <img class="item-img" src="images/icon-reminders.svg" alt="Reminders">
+                                <p class="lis">Reminders</p>
+                            </li>
+                            <li>
+                                <img class="item-img" src="images/icon-planning.svg" alt="Planning">
+                                <p class="lis">Planning</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="company">
+                    <h4 class="h2">Company
+                        <button onclick="toggleCompanyDropdown()" class="btn">
+                            <img class="drop-img" src="images/icon-arrow-down.svg" alt="dropdown arrow">
+                        </button>
+                    </h4>
+                    <div class="content" style="display: none;">
+                        <ul class="item2">
+                            <li>History</li>
+                            <li>Our Team</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="h3">Careers</h4>
+                <h4 class="h3">About</h4>
+                <div class="signup">
+                    <button class="login">Login</button>
+                    <button class="reg">Register</button>
+                </div>
+            </div>
+            <div class="info">
+                <h1 class="topic">Make remote work</h1>
+                <p class="para">Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.</p>
+                <button class="learn">Learn more</button>
+            </div>
+            <div class="icons">
+                <img class="footer1" src="images/client-databiz.svg" alt="Databiz">
+                <img class="footer2" src="images/client-audiophile.svg" alt="Audiophile">
+                <img class="footer" src="images/client-meet.svg" alt="Meet">
+                <img class="footer" src="images/client-maker.svg" alt="Maker">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

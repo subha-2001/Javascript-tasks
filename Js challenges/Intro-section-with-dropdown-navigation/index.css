@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap');
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Epilogue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 3%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.head {
+    display: flex;
+    top: 10px;
+    position: fixed;
+    margin-left: 5rem;
+    margin-top: 10px;
+    gap:20px;
+}
+
+.head:hover .content {
+    display: block;
+}
+
+.drop-img {
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    background-color: white;
+}
+
+.content {
+    position: absolute;
+    margin-top: 0rem;
+    left: 25px;
+    padding: 10px;
+    background-color: white;
+    width: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.05);
+    display: flex;
+}
+
+.item-img {
+    width: 10%;
+    padding-top: 12px;
+    height: 40%;
+}
+
+.h1, .h2, .h3 {
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+.h1:hover, .h2:hover, .h3:hover {
+    color: black;
+}
+
+.lis {
+    padding-left: 5px;
+    font-size: small;
+}
+
+.head h4 {
+    margin: 0;
+}
+
+.content ul {
+    padding: 0;
+}
+
+.content li {
+    display: flex;
+    list-style: none;
+}
+
+.feature .content {
+    max-height: 160px;
+    align-items: center;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.company .content {
+    left: 250px;
+    font-size: small;
+}
+
+.signup {
+    float: right;
+    margin-left: 35rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    padding: 5px;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+.login:hover, .reg:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.reg {
+    padding: 15px;
+    cursor: pointer;
+    width: 70%;
+    color: hsl(0, 0%, 41%);
+    background-color: white;
+    border-radius: 15%;
+}
+
+.bg {
+    width: 25%;
+    margin-top: 8rem;
+    margin-right: 5rem;
+    position: relative;
+    float: right;
+}
+
+.info {
+    width: 50%;
+    padding-left: 7rem;
+    padding-top: 2rem;
+}
+
+.topic {
+    font-size: 4.5rem;
+    padding-top: 3rem;
+}
+
+.para {
+    width: 70%;
+    color: hsl(0, 0%, 41%);
+}
+
+.learn {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.learn:hover {
+    background-color: white;
+    color: black;
+}
+
+.icons {
+    width: 100%;
+    padding-left: 7rem;
+    padding-top: 3.5rem;
+    justify-content: space-between;
+}
+
+.footer1 {
+    padding-right: 40px;
+    width: 7%;
+}
+
+.footer2 {
+    width: 7%;
+}
+
+.footer {
+    width: 7%;
+    padding-left: 51px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    /* position: fixed; */
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .head {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        margin-top: 5rem;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .head.show {
+        display: flex;
+        transform: translateX(0);
+    }
+    
+
+    .close-menu-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .signup {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .topic {
+       font-size: 2.5rem;
+    }
+
+    .para {
+        width: 75%;
+        font-size: 1rem;
+        padding-left: 3.5rem;
+        text-align: justify;
+    }
+    .footer1{
+        padding-left: 4rem;
+    }
+    .learn {
+        width: 50%;
+       
+        margin: 1rem 0;
+    }
+
+    .icons {
+        padding: 1rem;
+    }
+
+    .bg {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+    .signup{
+        width: 5;
+    }
+
+    .menu-icon{
+        opacity: 0.2;
+    }
+    .feature .content,
+    .company .content {
+        position: relative;
+        
+        display: block;
+       
+    }
+}
