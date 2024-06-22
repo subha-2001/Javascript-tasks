@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 380px;
+    width: 100%;
+    max-height: 600px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-field:first-child {
+    margin-right: 10px;
+}
+
+#fname, #lname {
+    margin-bottom: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0.5px solid hsl(169, 82%, 27%);
+}
+
+input {
+    cursor: pointer;
+}
+
+#email {
+    display: block;
+    border: 0.5px solid hsl(169, 82%, 27%);
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.msgbox {
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0.5px solid hsl(169, 82%, 27%);
+}
+
+#btn {
+    width: 90%;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: hsl(171, 61%, 15%);
+}
+
+.queryitem {
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#tick {
+    background-color: hsl(169, 82%, 27%);
+    margin-bottom: 1rem;
+}
+
+.he {
+    margin-left: 30px;
+    margin-top: -25px;
+}
+
+#sucmsg {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    height: auto;
+    margin-left: 4rem;
+    margin-top: 6.5rem;
+    width: 50%;
+    background-color: hsl(171, 61%, 15%);
+}
+
+.error {
+    color: red;
+    display: none;
+}
+.radio-label span {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid hsl(169, 82%, 27%);
+    border-radius: 5px;
+}
+
+.radio-label {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.radio-label input[type="radio"]:hover {
+    background-color: hsl(169, 82%, 27%);
+}
+
+.radio-label span {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid hsl(169, 82%, 27%);
+    border-radius: 5px;
+}
+
+.radio-label input[type="radio"]:checked + span {
+    background-color: hsl(148, 38%, 91%);
+}
+
+
+@media screen and (max-width: 600px) {
+    .msgbox {
+        height: 130px;
+    }
+
+    .card {
+      
+        margin-bottom: 4rem;
+        max-width: 400px;
+        width: 100%;
+        min-height: 710px;
+    }
+
+    .name-container {
+        display: block;
+    }
+
+    .radio-label {
+        display: flex;
+    }
+
+    #sucmsg {
+        margin-left: 10;
+        margin-top: 30rem;
+        width: 50%;
+    }
+    .radio-label {
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    
+    .radio-label input[type="radio"]:hover {
+        background-color: hsl(169, 82%, 27%);
+    }
+    
+    .radio-label span {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid hsl(169, 82%, 27%);
+        border-radius: 5px;
+    }
+    
+    .radio-label input[type="radio"]:checked + span {
+        background-color: hsl(148, 38%, 91%);
+    }
+    
+}
+

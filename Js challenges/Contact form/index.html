@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div id="sucmsg" style="display: none;">
+            <img src="assets/images/icon-success-check.svg" class="check">
+            <h3 class="he">Message Sent!</h3>
+            <p>Thanks for completing the form. We'll be in touch soon.</p>
+        </div>
+        <div class="card">
+            <form class="contact">
+                <h2 class="topic">Contact Us</h2>
+                <div class="name-container">
+                    <div class="name-field">
+                        <label class="fn">First Name *</label>
+                        <input type="text" id="fname">
+                        <p id="error-fname" class="error" style="display: none;"></p>
+                    </div>
+                    <div class="name-field">
+                        <label class="ln">Last Name *</label>
+                        <input type="text" id="lname">
+                        <p id="error-lname" class="error" style="display: none;"></p>
+                    </div>
+                </div>
+                <label class="ea">Email Address *</label>
+                <input type="email" id="email">
+                <p id="error-email" class="error" style="display: none;"></p>
+                <label class="query">Query Type *</label>
+                <div class="queryitem">
+                    <label class="radio-label">
+                        <input type="radio" name="enquiry" id="sub">
+                        <span>General Enquiry</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="enquiry" id="sup">
+                        <span>Support Request</span>
+                    </label>
+                    <p id="error-msg" class="error" style="display: none;"></p>
+                    
+                </div>
+                <label>Message</label>
+                <textarea name="message" class="msgbox" id="msg"></textarea>
+                <p id="error-msg" class="error" style="display: none;"></p>
+                <input type="checkbox" id="tick">
+                <label>I consent to being contacted by the team *</label>
+                <button id="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
