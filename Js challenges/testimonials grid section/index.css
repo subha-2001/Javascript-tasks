@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow Semi Condensed:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    width: 100%;
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+    height:100vh;
+    /* background-color: rgb(234, 248, 250); */
+    font-family:"Barlow Semi Condensed" ,sans-serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#EDF2F8;
+    /* min-height: 100vh;
+     */
+}
+.container {
+    grid-gap:1.5rem;
+    transform: scale(0.8);
+    display: grid;
+    margin: 1rem;
+    grid-template-columns: repeat(3,20rem);
+    grid-template-rows: repeat(2,16rem);
+}
+.purple{
+    background-color:  hsl(263, 55%, 52%);
+    padding: 20px;
+   grid-column: 1/3;
+  
+   grid-row: 1/2;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-position-x: 29rem;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+   
+}
+.grey,.purple{
+    height: 230px;
+}
+.grey {
+    padding: 15px; 
+     /* max-width: 280px; */
+   
+    grid-column: 3/4;
+   grid-row: 1/2;
+    border-radius: 15px; 
+    background-color:  hsl(217, 19%, 35%);
+}
+.whitesm{
+    padding: 15px; 
+
+    grid-column: 1/2;
+    grid-row: 2/2;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+
+}
+.black {
+    padding: 15px; 
+    
+    width: 640px;
+    border-radius: 15px;grid-column: 2/3;
+    grid-row: 2/2;
+    background-color:   hsl(219, 29%, 14%);
+
+}
+.whiteb{
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    height: 545px;
+    background-color:  hsl(0, 0%, 100%);
+    grid-row: 1/2;
+    grid-column: 4/4;
+
+}
+.pst1,.gst1,.bst1 {
+    color:  hsl(0, 0%, 100%);
+    font-weight: bold;
+    font-family:"Barlow Semi Condensed" ,sans-serif;
+
+}
+.pst2,.gst2,.bst2 {
+    color:  hsl(0, 0%, 100%);
+    /* letter-spacing: 0.2px; */
+    text-align: justify;
+    font-family:"Barlow Semi Condensed" ,sans-serif;
+    opacity: 70%;
+}
+.wbst1,.wst1{
+    color:  hsl(217, 53%, 24%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family:"Barlow Semi Condensed" ,sans-serif;
+}
+.wbst2,.wst2 {
+    color:  hsl(217, 30%, 22%);
+    font-family:"Barlow Semi Condensed" ,sans-serif;
+    /* font-weight: bolder; */
+}
+.ht{
+    margin-top: -1.3rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+    
+}
+.name1 {
+    margin-left: 3rem;
+    margin-top:-9%;
+    
+}
+.name3{
+    margin-left: 3rem;
+    margin-top:-20%;
+}
+.name2{
+    margin-left: 3rem;
+    margin-top:-20%;
+}
+.logo4{
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid white;
+    width: 5%;
+}
+.logo2,.logo5{
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid white;
+    width: 10%;
+}
+
+
+.name4{
+    margin-left: 4rem;
+    margin-top:-10%;
+}
+.name5{
+    margin-left: 3rem;
+    margin-top:-20%;
+}
+h4 {
+    color: hsl(0, 0%, 100%);
+}
+
+.logo1{
+    border: 1px solid white;
+    border-radius: 30px 30px 30px 30px;
+    width: 5%;
+}
+.logo3{
+    border: 1px solid white;
+    border-radius: 30px 30px 30px 30px;
+    width: 12%;
+
+}
+.je {
+    color: hsl(217, 30%, 22%);
+}
+.htw{
+    
+    color: hsl(217, 30%, 22%);
+    opacity: 70%; margin-top:-6%;
+}
+@media screen and (max-width:600px) {
+    .container{
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        display: block;
+        
+        
+    }
+    .purple{
+        background: url("images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(263, 55%, 52%);
+        background-position-x:15rem ;
+    }
+    .purple,.black{
+        max-width:337px ;
+        margin-bottom: 2rem;
+        height: 340px;margin-left: 20px;
+    }
+    .grey,.whitesm{
+        max-width:330px;margin-left: 20px;
+        margin-bottom: 2rem;
+  
+    } 
+    .logo1,.logo4{
+        width: 10%;
+    }
+    .name1,.name4{
+        margin-top: -15%;
+    } 
+    .whiteb{
+        width: 380px;margin-left: 20px;
+        height: 395px;
+    }
+    .name3,.name5{
+        margin-top: -17%;
+    }
+}
