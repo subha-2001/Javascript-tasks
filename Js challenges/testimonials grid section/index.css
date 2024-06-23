@@ -13,12 +13,12 @@ body {
     align-items: center;
     justify-content: center;
     background:#EDF2F8;
-    /* min-height: 100vh;
-     */
+    min-height: 100%;
+    
 }
 .container {
     grid-gap:1.5rem;
-    transform: scale(0.8);
+    transform: scale(0.9);
     display: grid;
     margin: 1rem;
     grid-template-columns: repeat(3,20rem);
