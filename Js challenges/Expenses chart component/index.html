@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses chart component</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="topbar">
+                <div class="data">
+                    <p>My balance </p>
+                    <img class="logo" src="images/logo.svg">
+          
+                    <p class="rupee">$921.48</p>
+                </div>
+                 </div>
+            <div class="databar">
+                <h3>Spending - Last 7 days</h3>
+                <div class="chartdiagram">
+                <canvas id="barchart" width="400" height="200"></canvas>
+            </div>
+             <hr>
+                <div class="info">
+                    <p class="typo">Total this month</p>
+                    <p class="irupee">$478.33</p>
+                    <div class="past">
+                        <p class="ad">+2.4% </p>
+                        <p class="pa">from last month</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

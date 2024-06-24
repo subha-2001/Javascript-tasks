@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM Sans:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color:  hsl(33, 100%, 98%);
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans",sans-serif;
+}
+.container {
+    width: 100%;
+    /* max-width: 410px; */
+}
+.topbar{
+    background-color:  hsl(10, 79%, 65%);
+    padding: 10px;
+    width: 100%;
+    color:  hsl(27, 66%, 92%);
+    border-radius: 12px;
+    max-width: 400px;
+}
+.logo{
+    width: 10%;
+    margin-top: -10px;
+    float: right;
+}
+.rupee {
+    font-weight: bold;
+}
+.databar {
+    max-width:400px;
+    background-color: hsl(30, 100%, 100%);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius:12px;
+}
+.typo,.pa{
+    color:  hsl(0, 0%, 55%);
+    opacity: 80%;
+
+}
+.past{
+    float: right;
+    margin-top: -20%;
+}
+.irupee{
+color:hsl(25, 47%, 15%);
+font-size: larger;
+}
+.ad,.irupee{
+    font-weight: bold;
+}
+.ad{
+    color: hsl(25, 47%, 15%);
+}
