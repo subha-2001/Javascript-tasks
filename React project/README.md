@@ -54,6 +54,24 @@ when they are hosted on different domains.
    - Storing sensitive information (like email credentials) in environment variables (`.env` file) instead of hardcoding them in the source code. 
 This enhances security and keeps credentials out of version control.
 
+4.**Password generation**
+For better security and to avoid using "Less secure app access," you can use an app password or OAuth2 authentication for sending emails with Gmail. Here's how you can do it:
+
+Generating an App Password
+Enable 2-Step Verification:
+
+Go to your Google Account.
+Under "Security," find and enable "2-Step Verification."
+Generate an App Password:
+
+After enabling 2-Step Verification, go to the "Security" section of your Google Account.
+Under "Signing in to Google," select "App passwords."
+You might need to enter your password again.
+Under "Select app," choose "Mail."
+Under "Select device," choose "Other" and give it a name, for example, "Nodemailer."
+Click "Generate."
+You will see a 16-character password. This is your app password.
+
 ### Steps Summary
 
 1. **Frontend Setup**
