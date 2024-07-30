@@ -1,0 +1,50 @@
+.popup {
+    background-image:url('../components/pop.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    top:0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content{
+    height: auto;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0,6);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    animation: fade;
+    animation-duration: 1s;
+
+    
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+        
+}
+.close {
+    color: red;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.close:hover {
+    background-color: darkred;
+}
+.popup-msg{
+    color: red;
+    font-size: 20px;
+}

@@ -1,0 +1,13 @@
+*{
+  
+  box-sizing: border-box;
+
+
+  font-family: sans-serif;
+}
+body{
+  background-image: url('../public/email.jpg');
+  background-repeat: no-repeat;
+  
+  width: 100%;
+}
